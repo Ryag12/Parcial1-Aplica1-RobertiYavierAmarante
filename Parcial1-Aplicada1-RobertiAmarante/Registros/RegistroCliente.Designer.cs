@@ -33,12 +33,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.FechaNacmaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.LimiteCreditomaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.NombretextBox = new System.Windows.Forms.TextBox();
+            this.ClienteIdtextBox = new System.Windows.Forms.TextBox();
+            this.Guardarbutton = new System.Windows.Forms.Button();
+            this.Modificarbutton = new System.Windows.Forms.Button();
+            this.Eliminarbutton = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -93,56 +93,58 @@
             this.FechaNacmaskedTextBox.TabIndex = 4;
             this.FechaNacmaskedTextBox.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox1
+            // LimiteCreditomaskedTextBox
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(198, 286);
-            this.maskedTextBox1.Mask = "99999";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(260, 29);
-            this.maskedTextBox1.TabIndex = 5;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.LimiteCreditomaskedTextBox.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LimiteCreditomaskedTextBox.Location = new System.Drawing.Point(198, 286);
+            this.LimiteCreditomaskedTextBox.Mask = "99999";
+            this.LimiteCreditomaskedTextBox.Name = "LimiteCreditomaskedTextBox";
+            this.LimiteCreditomaskedTextBox.Size = new System.Drawing.Size(260, 29);
+            this.LimiteCreditomaskedTextBox.TabIndex = 5;
+            this.LimiteCreditomaskedTextBox.ValidatingType = typeof(int);
             // 
-            // textBox1
+            // NombretextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(198, 132);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 22);
-            this.textBox1.TabIndex = 6;
+            this.NombretextBox.Location = new System.Drawing.Point(198, 132);
+            this.NombretextBox.Name = "NombretextBox";
+            this.NombretextBox.Size = new System.Drawing.Size(260, 22);
+            this.NombretextBox.TabIndex = 6;
             // 
-            // textBox2
+            // ClienteIdtextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(198, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 22);
-            this.textBox2.TabIndex = 7;
+            this.ClienteIdtextBox.Location = new System.Drawing.Point(198, 49);
+            this.ClienteIdtextBox.Name = "ClienteIdtextBox";
+            this.ClienteIdtextBox.Size = new System.Drawing.Size(260, 22);
+            this.ClienteIdtextBox.TabIndex = 7;
             // 
-            // button1
+            // Guardarbutton
             // 
-            this.button1.Location = new System.Drawing.Point(16, 483);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 68);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Location = new System.Drawing.Point(16, 483);
+            this.Guardarbutton.Name = "Guardarbutton";
+            this.Guardarbutton.Size = new System.Drawing.Size(122, 68);
+            this.Guardarbutton.TabIndex = 8;
+            this.Guardarbutton.Text = "Guardar";
+            this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // Modificarbutton
             // 
-            this.button2.Location = new System.Drawing.Point(235, 483);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 68);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Modificarbutton.Location = new System.Drawing.Point(235, 483);
+            this.Modificarbutton.Name = "Modificarbutton";
+            this.Modificarbutton.Size = new System.Drawing.Size(123, 68);
+            this.Modificarbutton.TabIndex = 9;
+            this.Modificarbutton.Text = "Modificar";
+            this.Modificarbutton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Eliminarbutton
             // 
-            this.button3.Location = new System.Drawing.Point(473, 483);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 68);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Location = new System.Drawing.Point(473, 483);
+            this.Eliminarbutton.Name = "Eliminarbutton";
+            this.Eliminarbutton.Size = new System.Drawing.Size(123, 68);
+            this.Eliminarbutton.TabIndex = 10;
+            this.Eliminarbutton.Text = "Eliminar";
+            this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // button4
             // 
@@ -159,12 +161,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 592);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.Eliminarbutton);
+            this.Controls.Add(this.Modificarbutton);
+            this.Controls.Add(this.Guardarbutton);
+            this.Controls.Add(this.ClienteIdtextBox);
+            this.Controls.Add(this.NombretextBox);
+            this.Controls.Add(this.LimiteCreditomaskedTextBox);
             this.Controls.Add(this.FechaNacmaskedTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -184,12 +186,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox FechaNacmaskedTextBox;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MaskedTextBox LimiteCreditomaskedTextBox;
+        private System.Windows.Forms.TextBox NombretextBox;
+        private System.Windows.Forms.TextBox ClienteIdtextBox;
+        private System.Windows.Forms.Button Guardarbutton;
+        private System.Windows.Forms.Button Modificarbutton;
+        private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button button4;
     }
 }

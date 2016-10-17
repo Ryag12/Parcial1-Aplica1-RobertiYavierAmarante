@@ -15,5 +15,12 @@ namespace Parcial1_Aplicada1_RobertiAmarante
         {
             InitializeComponent();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.RegistroCliente rCliente = new Registros.RegistroCliente();
+
+            rCliente.Show();
+        }
     }
 }
