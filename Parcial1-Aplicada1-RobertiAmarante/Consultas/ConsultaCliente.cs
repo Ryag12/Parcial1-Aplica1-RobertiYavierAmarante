@@ -10,9 +10,9 @@ using Entidades;
 using BLL;
 namespace Parcial1_Aplicada1_RobertiAmarante.Consultas
 {
-    public partial class Consulta : Form
+    public partial class ConsultaCliente : Form
     {
-        public Consulta()
+        public ConsultaCliente()
         {
             InitializeComponent();
         }
@@ -34,6 +34,10 @@ namespace Parcial1_Aplicada1_RobertiAmarante.Consultas
             dataGridView1.DataSource = lista;
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
-    }
+    
 }

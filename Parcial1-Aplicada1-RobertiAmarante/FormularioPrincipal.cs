@@ -22,5 +22,12 @@ namespace Parcial1_Aplicada1_RobertiAmarante
 
             rCliente.Show();
         }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaCliente rConsultaCliente = new Consultas.ConsultaCliente();
+
+            rConsultaCliente.Show();
+        }
     }
 }

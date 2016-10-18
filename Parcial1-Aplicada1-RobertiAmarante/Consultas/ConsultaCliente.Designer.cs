@@ -1,6 +1,6 @@
 ﻿namespace Parcial1_Aplicada1_RobertiAmarante.Consultas
 {
-    partial class Consulta
+    partial class ConsultaCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(811, 300);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -98,7 +99,7 @@
             this.FiltrartextBox.Size = new System.Drawing.Size(633, 22);
             this.FiltrartextBox.TabIndex = 6;
             // 
-            // Consulta
+            // ConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,7 +111,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Consulta";
+            this.Name = "ConsultaCliente";
             this.Text = "Consulta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

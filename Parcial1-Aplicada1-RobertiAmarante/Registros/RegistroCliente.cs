@@ -23,11 +23,35 @@ namespace Parcial1_Aplicada1_RobertiAmarante.Registros
         {
             Cliente cliente = new Cliente();
 
+            if (!Confirmar())
+            {
+                MessageBox.Show("complete todos los datos");
+                return;
+            }
+
             if (ClienteBLL.Guardar(cliente))
             {
                 MessageBox.Show("El cliente ha sido registrado con exito!!");
             }
         }
+
+        private bool Confirmar()
+        {
+            bool retorno = true;
+
+            if (string.IsNullOrEmpty(NombretextBox.Text))
+            {
+                errorProvider1.SetError(NombretextBox, "Debes introducir un nombre");
+                errorProvider2.SetError(FechaNacmaskedTextBox, "Debes introducir la fecha de nacimiento datos");
+                errorProvider3.SetError(LimiteCreditomaskedTextBox, "Debes introducir el Limite de Credito");
+                errorProvider4.SetError(ClienteIdtextBox, "El usuario debe al menor contener un ID ");
+
+                retorno = false;
+            }
+            return retorno;
+        }
+
+
 
         private Cliente LLenarFormulario()
         {
@@ -44,7 +68,12 @@ namespace Parcial1_Aplicada1_RobertiAmarante.Registros
         {
             Cliente cliente = new Cliente();
 
-            if(ClienteBLL.Eliminar())
+            
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -6,7 +6,8 @@ using System.Text;
 
 namespace Entidades
 {
-     public class Cliente
+   
+    public class Cliente
     {
         [Key]
         public int ClienteId { get; set; }
